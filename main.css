@@ -95,7 +95,6 @@ body {
   }
 
   .img-header {
-    
     height: 34%;
     padding-top: 15%;
   }
@@ -231,12 +230,13 @@ body {
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1;
-    width: 92%;
+    width: 100%;
     transition: .5s ease;
     opacity:0;
     color: white;
     font-size: 20px;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     border-radius: 0px 0px 20px 20px;
   }
@@ -313,8 +313,6 @@ body {
     padding-bottom: 50px;
   }
 
-
-
   .contact {
     background-color: #FFFFFF;
     width: 65%;
@@ -342,7 +340,7 @@ body {
     font: 18px arial, sans-serif;
   }
   input[type="email"] {
-    margin-left: 2%;
+    margin-left: 1%;
   }
   
   textarea {
@@ -354,7 +352,7 @@ body {
 		display: block;
 		outline: 0;
 		padding: 1em;
-    width: 92%;
+    width: 91%;
     font-size: 40px;
     margin-top: 9%;
     font: 18px arial, sans-serif;
@@ -423,10 +421,105 @@ body {
   text-decoration: underline;
 }
 
-  @media only screen and (max-width: 960px) {
-      
+  @media only screen and (max-width: 1700px) {
+    input[type="text"],
+	  input[type="email"] {
+      width: 40%;
+      margin-bottom: 1%;
+    }
+    input[type="email"] {
+      margin-left: 1%;
+    }
+
+    .info {
+      font-size: 21px;
+      padding-left: 3px;
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .main-1 {
+      padding-left: 40px;
+      padding-right: 50px;
+    }
     .main-2 {
-        background-color: #00FF00;
+      padding-left: 40px;
+      padding-right: 60px;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .main-1 {
+      padding-left: 40px;
+      padding-right: 50px;
+    }
+    .main-2 {
+      padding-left: 40px;
+      padding-right: 50px;
+    }
+
+    input[type="text"],
+	  input[type="email"] {
+      width: 39%;
+      margin-bottom: 1%;
+    }
+    input[type="email"] {
+      margin-left: 1%;
+    }
+  }
+
+  @media only screen and (max-width: 1320px) {
+    .img-header {
+      height: 34%;
+      padding-top: 10%;
+    }
+
+     .img-header img {
+      width: 50%;
+    }
+
+     .img-header h1 {
+      top: 30%;
+      font-size: 40px;
+    }
+    
+    .main-1 {
+      padding-left: 40px;
+      padding-right: 50px;
+    }
+    .main-2 {
+      padding-left: 40px;
+      padding-right: 50px;
+    }
+
+    input[type="text"],
+	  input[type="email"] {
+      width: 90%;
+      margin-bottom: 1%;
+    }
+    input[type="email"] {
+      margin-left: 0;
+    }
+
+    input[type=submit] { 
+      border-radius: 5px; 
+      padding: 1em;
+      width: 40%;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+
+    .main-1 {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+    .main-2 {
+        padding-left: 20px;
+        padding-right: 20px;
       }
 
       .container-1{
@@ -444,4 +537,212 @@ body {
       margin-left: auto;
       height: 2000px;
      }
+
+     .img-header {
+      height: 34%;
+      padding-top: 5%;
+    }
+
+     .img-header img {
+      width: 25%;
+    }
+
+     .img-header h1 {
+      top: 45%;
+      font-size: 40px;
+    }
+     
+    .header-links {
+      margin-top: 70px;
+    }
+
+    .header-links a {
+      font-size: 30px;
+    }
+
+    .header-foot {
+      padding-bottom: 20px;
+    }
+
+    .overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6 {
+      width: 100%;
+      color: white;
+      font-size: 13px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    .contact {
+      width: 100%;
+    }
+
+    .info {
+      width: 100%;
+      padding-top: 50px;
+    }
+
+    input[type="text"],
+	  input[type="email"] {
+      width: 40%;
+      margin-bottom: 1%;
+    }
+    input[type="email"] {
+      margin-left: 1%;
+    }
+
+    input[type=submit] { 
+      border-radius: 5px; 
+      padding: 1em;
+      width: 40%;
+    }
   }
+
+  @media only screen and (max-width: 800px) {
+    .img-header {
+      height: 34%;
+      padding-top: 10%;
+    }
+
+    .img-header img {
+      width: 30%;
+    }
+    
+    .img-header h1 {
+      top: 48%;
+      font-size: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 690px) {
+    .main-1 {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+    .main-2 {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+    .img-header h1 {
+      top: 45%;
+      font-size: 40px;
+    }
+     
+    .header-links {
+      margin-top: 70px;
+    }
+
+    .header-links a {
+      font-size: 30px;
+    }
+
+    .header-foot {
+      padding-bottom: 20px;
+    }
+
+    .overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6 {
+      width: 100%;
+      color: white;
+      font-size: 13px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    .contact {
+      width: 100%;
+    }
+
+    .info {
+      width: 100%;
+      padding-top: 50px;
+    }
+
+    input[type="text"],
+	  input[type="email"] {
+      width: 40%;
+      margin-bottom: 1%;
+    }
+    input[type="email"] {
+      margin-left: 1%;
+    }
+
+    input[type=submit] { 
+      border-radius: 5px; 
+      padding: 1em;
+      width: 40%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {   
+      
+    .main-1 {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+    .main-2 {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+    .img-header h1 {
+      top: 40%;
+      font-size: 40px;
+    }
+     
+    .header-links {
+      margin-top: 70px;
+    }
+
+    .header-links a {
+      font-size: 30px;
+    }
+
+    .header-foot {
+      padding-bottom: 20px;
+    }
+
+    .overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6 {
+      width: 100%;
+      color: white;
+      font-size: 13px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    .contact {
+      width: 100%;
+    }
+
+    .info {
+      width: 100%;
+      padding-top: 50px;
+    }
+
+    input[type="text"],
+	  input[type="email"] {
+      width: 40%;
+      margin-bottom: 1%;
+    }
+    input[type="email"] {
+      margin-left: 1%;
+    }
+
+    input[type=submit] { 
+      border-radius: 5px; 
+      padding: 1em;
+      width: 40%;
+    }
+  }
+
