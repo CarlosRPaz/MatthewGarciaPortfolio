@@ -322,7 +322,7 @@ body {
     border-style: solid;
     width: 100%;
     transition: 0.3s;
-    margin-top: 110%;
+    margin-top: 5%;
   }
 
   .button:hover{
@@ -984,6 +984,7 @@ body {
     .portnav h2 {
       font-size: 23px;
       width: 80%;
+      margin-left: -10px;
     }
     .portnav a {
       font-size: 16px;
@@ -997,6 +998,7 @@ body {
       font-size: 8px;
     }
     .portHeader p {
+      margin-top: 15px;
       font-size: 16px;
     }
 
@@ -1019,14 +1021,14 @@ body {
       margin-bottom: 10px;
     }
     .navigation a {
-      margin-left: 5px;
-      margin-right: 5px;
-      padding: 5px;
+      margin-left: 3px;
+      margin-right: 3px;
+      padding: 3px;
       border: none;
-      font-size: 18px;
+      font-size: 16px;
     }
     .navigation i {
-      font-size: 10px;
+      font-size: 8px;
       margin: 0;
       padding: 0;
     }
@@ -1040,6 +1042,11 @@ body {
 
   .img-header img {
     width: 46%;
+  }
+
+  .portHeader p {
+    margin-left: 1px;
+    margin-right: 1px;
   }
 }
 
