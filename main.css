@@ -14,26 +14,50 @@ body {
     text-align: center;
   }
   .container-2 h2 {
-    font: 50px arial, sans-serif;
+    font: 50px sans-serif;
     margin-bottom: 0;
     color: #686868;
   }
   .container-2 p{
-    font: 20px arial, sans-serif;
+    font: 20px sans-serif;
     color: #686868;
     margin-bottom: 25px;
+  }
+
+  .portnav {
+    background-color: black;
+    height: 75px;
+    text-align: center;
   }
   .portHeader {
     margin-bottom: 30px;
   }
+  .portHeader p {
+    margin-right: 300px;
+    margin-left: 300px;
+  }
   .portHeader a{
-    font: 25px arial, sans-serif;
+    font: 25px sans-serif;
     text-decoration: none;
     color: #686868;
     margin: 25px;
   }
   .portHeader a:active{
     text-decoration: underline;
+  }
+  .portnav h2 {
+    color: white;
+    width: 50%;
+    display: inline-block;
+    margin: 10px;
+    margin-right: -50px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .portnav a {
+    color: white;
+    margin: 10px;
+    font-size: 28px;
   }
 
   .panel-1{
@@ -446,6 +470,11 @@ body {
       padding-left: 40px;
       padding-right: 60px;
     }
+
+    .portHeader p {
+      margin-right: 200px;
+      margin-left: 200px;
+    }
   }
 
   @media only screen and (max-width: 1400px) {
@@ -505,6 +534,11 @@ body {
       border-radius: 5px; 
       padding: 1em;
       width: 40%;
+    }
+
+    .portHeader p {
+      margin-right: 100px;
+      margin-left: 100px;
     }
   }
 
@@ -597,6 +631,24 @@ body {
       padding: 1em;
       width: 40%;
     }
+
+    .portnav {
+      height: 70px;
+    }
+    .container-2{
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .portnav h2 {
+      width: 50%;
+      margin: 10px;
+      margin-right: -50px;
+      font-size: 40px;
+    }
+    .portnav a {
+      margin: 10px;
+      font-size: 22px;
+    }
   }
 
   @media only screen and (max-width: 800px) {
@@ -613,6 +665,8 @@ body {
       top: 48%;
       font-size: 40px;
     }
+
+    
   }
 
   @media only screen and (max-width: 690px) {
@@ -677,6 +731,32 @@ body {
       border-radius: 5px; 
       padding: 1em;
       width: 40%;
+    }
+
+    .portnav {
+      height: 70px;
+    }
+    .container-2{
+      margin-left: 3%;
+      margin-right: 3%;
+      text-align: center;
+    }
+    .portnav h2 {
+      width: 50%;
+      margin: 12px;
+      margin-right: -50px;
+      font-size: 40px;
+    }
+    .portHeader p {
+      margin-right: 60px;
+      margin-left: 60px;
+    }
+    .portHeader button {
+      font: 20px sans-serif;
+      text-decoration: none;
+      color: #686868;
+      padding-left: 7px;
+      padding-right: 10px;
     }
   }
 
@@ -744,5 +824,205 @@ body {
       padding: 1em;
       width: 40%;
     }
+
+    .portnav {
+      height: 60px;
+    }
+    .container-2{
+      margin-left: 3%;
+      margin-right: 3%;
+      text-align: center;
+    }
+    .portnav h2 {
+      width: 70%;
+      margin: 15px;
+      margin-right: -50px;
+      font-size: 34px;
+    }
+    .portnav a {
+      margin-top: 10px;
+      font-size: 21px;
+    }
+
+    .portHeader p {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
   }
 
+  @media only screen and (max-width: 550px) {
+    .img-header h1 {
+      top: 39%;
+      font-size: 40px;
+    }
+
+    input[type="text"],
+	  input[type="email"] {
+      width: 90%;
+      margin-bottom: 1%;
+    }
+    input[type="email"] {
+      margin-left: 0;
+    }
+
+    input[type=submit] { 
+      border-radius: 5px; 
+      padding: 1em;
+      width: 40%;
+    }
+
+    .portHeader p {
+      font-size: 18px;
+    }
+    .portHeader button {
+      font-size: 16px;
+    }
+    .portHeader i {
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .img-header h1 {
+      top: 37%;
+      font-size: 35px;
+    }
+
+    .img-header img {
+      width: 34%;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+    
+    input[type=submit] { 
+      border-radius: 5px; 
+      padding: 1em;
+      width: 50%;
+    }
+
+    .main-1 {
+      padding-top: 20px;
+    }
+
+    hr {
+      margin-top: 50px;
+    }
+
+    .main-2 {
+      padding-top: 0px;
+    }
+
+    .left-panel {
+      width: 49%;
+    }
+  
+    .left-panel img {
+      margin-bottom: 5%;
+    }
+  
+    .right-panel {
+      width: 49%;
+    }
+  
+    .right-panel img {
+      margin-bottom: 5%;
+    }
+  
+    .overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6 {
+      font-size: 15px;
+    }
+
+    .portnav {
+      height: 50px;
+    }
+    .portnav h2 {
+      font-size: 23px;
+      width: 80%;
+    }
+    .portnav a {
+      font-size: 16px;
+    }
+    .portHeader button {
+      font-size: 14px;
+      padding-left: 4px;
+      padding-right: 7px;
+    }
+    .portHeader i {
+      font-size: 8px;
+    }
+    .portHeader p {
+      font-size: 16px;
+    }
+
+    .panel-1 {
+      width: 100%;
+    }
+    .panel-2 {
+      width: 100%;
+      margin-left: 0;
+    }
+    .panel-3 {
+      width: 100%;
+    }
+    .panel-1 img, .panel-2 img, .panel-3 img {
+      margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+  .img-header h1 {
+    top: 35%;
+    font-size: 30px;
+  }
+
+  .img-header img {
+    width: 46%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .img-header h1 {
+    top: 34%;
+    font-size: 30px;
+  }
+
+  .img-header img {
+    width: 45%;
+  }
+
+  .header-links a {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .main-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+  }
+ 
+  input[type=submit] { 
+    border-radius: 5px; 
+    padding: 1em;
+    width: 70%;
+  }
+
+  .overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6 {
+    font-size: 12px;
+  }
+
+  .portFooter{
+    height: 100px;
+    padding-top: 10%;
+    font: 15px arial, sans-serif;
+  }
+}
