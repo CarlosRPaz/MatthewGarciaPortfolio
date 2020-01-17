@@ -35,6 +35,7 @@ body {
   .portHeader p {
     margin-right: 300px;
     margin-left: 300px;
+    margin-top: 30px;
   }
   .portHeader a{
     font: 25px sans-serif;
@@ -321,7 +322,7 @@ body {
     border-style: solid;
     width: 100%;
     transition: 0.3s;
-    margin-top: 5%;
+    margin-top: 110%;
   }
 
   .button:hover{
@@ -443,6 +444,18 @@ body {
   background-color: #FFFFFF;
   color: #000000;
   text-decoration: underline;
+}
+
+.navigation {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.navigation a {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border: none;
+  font-size: 25px;
 }
 
   @media only screen and (max-width: 1700px) {
@@ -649,6 +662,18 @@ body {
       margin: 10px;
       font-size: 22px;
     }
+
+    .navigation {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    .navigation a {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 10px;
+      border: none;
+      font-size: 20px;
+    }
   }
 
   @media only screen and (max-width: 800px) {
@@ -757,6 +782,21 @@ body {
       color: #686868;
       padding-left: 7px;
       padding-right: 10px;
+    }
+
+    .navigation {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .navigation a {
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 5px;
+      border: none;
+      font-size: 18px;
+    }
+    .navigation i {
+      font-size: 12px;
     }
   }
 
@@ -972,6 +1012,23 @@ body {
     }
     .panel-1 img, .panel-2 img, .panel-3 img {
       margin-bottom: 2%;
+    }
+
+    .navigation {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .navigation a {
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 5px;
+      border: none;
+      font-size: 18px;
+    }
+    .navigation i {
+      font-size: 10px;
+      margin: 0;
+      padding: 0;
     }
 }
 

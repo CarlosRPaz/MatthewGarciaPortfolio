@@ -6,9 +6,24 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="main.css" />
+        <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+    <script>
+        $(document).ready(function () {
+            $(".button").click(function () {
+                var name = $(this).attr("data-filter");
+                if (name == "all") {
+                    $(".filter").show("2000");
+                }
+                else {
+                    $(".filter").not("." + name).hide("2000");
+                    $(".filter").filter("." + name).show("2000");
+                }
+            })
+        })
+    </script>
 
     <body>
         <div class="portnav">
@@ -18,46 +33,96 @@
         <div class="container-2">
             <div class="portHeader">
 
-
                 <p>Here is a collection of some of my favorite photos that I've captured. The camera I use is the Sony
                     Picture Taker 3000. Here are some random bulk words to make it look like more writing. I'm not sure
                     what you would want here but I'm typing these words so we know what it would look like.</p>
-                <button class="btn active" onclick="filterSelection('all')">All</button><i class="fa fa-circle"></i>
-                <button class="btn" onclick="filterSelection('portrait')">Portrait</button><i class="fa fa-circle"></i>
-                <button class="btn" onclick="filterSelection('landscape')">Landscape</button><i
-                    class="fa fa-circle"></i>
-                <button class="btn" onclick="filterSelection('travel')">Travel</button><i class="fa fa-circle"></i>
-                <button class="btn" onclick="filterSelection('lifestyle')">Lifestyle</button>
+
+                <div class="navigation">
+                    <a href="#" data-filter="all" class="button">All</a><i class="fa fa-circle"></i>
+                    <a href="#" data-filter="portrait" class="button">Portrait</a><i class="fa fa-circle"></i>
+                    <a href="#" data-filter="landscape" class="button">Landscape</a><i class="fa fa-circle"></i>
+                    <a href="#" data-filter="travel" class="button">Travel</a><i class="fa fa-circle"></i>
+                    <a href="#" data-filter="lifestyle" class="button">Lifestyle</a>
+                </div>
+
             </div>
             <div class="panel-1">
-                <img src="images/land1.jpg" alt="" class="filterDiv landscape travel">
-                <img src="images/land3.jpg" alt="" class="filterDiv landscape">
-                <img src="images/port4.png" alt="" class="filterDiv portrait">
-                <img src="images/port5.jpg" alt="" class="filterDiv portrait">
-                <img src="images/port15.jpg" alt="" class="filterDiv lifestyle">
-                <img src="images/port7.jpg" alt="" class="filterDiv portrait travel">
-                <img src="images/port12.jpg" alt="" class="filterDiv portrait">
-                <img src="images/port13.jpg" alt="" class="filterDiv portrait">
-                <img src="images/port11.jpg" alt="" class="filterDiv portrait lifestyle">
+                <div class="filter landscape travel">
+                    <img src="images/land1.jpg" alt="">
+                </div>
+                <div class="filter landscape">
+                    <img src="images/land3.jpg" alt="">
+                </div>
+                <div class="filter portrait">
+                    <img src="images/port4.png" alt="">
+                </div>
+                <div class="filter portrait">
+                    <img src="images/port5.jpg" alt="">
+                </div>
+                <div class="filter lifestyle">
+                    <img src="images/port15.jpg" alt="">
+                </div>
+                <div class="filter portrait travel">
+                    <img src="images/port7.jpg" alt="">
+                </div>
+                <div class="filter portrait">
+                    <img src="images/port12.jpg" alt="">
+                </div>
+                <div class="filter portrait">
+                    <img src="images/port13.jpg" alt="">
+                </div>
+                <div class="filter portrait lifestyle">
+                    <img src="images/port11.jpg" alt="">
+                </div>
             </div>
             <div class="panel-2">
-                <img src="images/land5.jpg" alt="" class="filterDiv travel">
-                <img src="images/port1.jpg" alt="" class="filterDiv portrait lifestyle">
-                <img src="images/land7.jpg" alt="" class="filterDiv landscape">
-                <img src="images/port17.jpg" alt="" class="filterDiv portrait">
-                <img src="images/port10.jpg" alt="" class="filterDiv portrait lifestyle">
-                <img src="images/port2.jpg" alt="" class="filterDiv portrait">
+                <div class="filter travel">
+                    <img src="images/land5.jpg" alt="">
+                </div>
+                <div class="filter portrait lifestyle">
+                    <img src="images/port1.jpg" alt="">
+                </div>
+                <div class="filter landscape">
+                    <img src="images/land7.jpg" alt="">
+                </div>
+                <div class="filter portrait">
+                    <img src="images/port17.jpg" alt="">
+                </div>
+                <div class="filter portrait lifestyle">
+                    <img src="images/port10.jpg" alt="">
+                </div>
+                <div class="filter portrait">
+                    <img src="images/port2.jpg" alt="">
+                </div>
             </div>
             <div class="panel-3">
-                <img src="images/land2.jpg" alt="" class="filterDiv travel">
-                <img src="images/land4.jpg" alt="" class="filterDiv travel">
-                <img src="images/land6.jpg" alt="" class="filterDiv landscape">
-                <img src="images/land8.jpg" alt="" class="filterDiv travel">
-                <img src="images/port6.jpg" alt="" class="filterDiv portrait">
-                <img src="images/port3.jpg" alt="" class="filterDiv portrait">
-                <img src="images/port9.jpg" alt="" class="filterDiv portrait lifestyle">
-                <img src="images/port15.jpg" alt="" class="filterDiv lifestyle">
-                <img src="images/port16.jpg" alt="" class="filterDiv portrait">
+                <div class="filter travel">
+                    <img src="images/land2.jpg" alt="" class="filterDiv travel">
+                </div>
+                <div class="filter travel">
+                    <img src="images/land4.jpg" alt="" class="filterDiv travel">
+                </div>
+                <div class="filter landscape">
+                    <img src="images/land6.jpg" alt="" class="filterDiv landscape">
+                </div>
+                <div class="filter travel">
+                    <img src="images/land8.jpg" alt="" class="filterDiv travel">
+                </div>
+                <div class="filter portrait">
+                    <img src="images/port6.jpg" alt="" class="filterDiv portrait">
+                </div>
+                <div class="filter portrait">
+                    <img src="images/port3.jpg" alt="" class="filterDiv portrait">
+                </div>
+                <div class="filter portrait lifestyle">
+                    <img src="images/port9.jpg" alt="" class="filterDiv portrait lifestyle">
+                </div>
+                <div class="filter lifestyle">
+                    <img src="images/port15.jpg" alt="" class="filterDiv lifestyle">
+                </div>
+                <div class="filter portrait">
+                    <img src="images/port16.jpg" alt="" class="filterDiv portrait">
+                </div>
             </div>
         </div>
         <div class="portFooter">
